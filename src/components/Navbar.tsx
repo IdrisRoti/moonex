@@ -7,6 +7,7 @@ import LogoImage from "../assets/logo-design.png";
 import { NavLinks } from "../constants";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
+import CustomButton from "./CustomButton";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("/");
@@ -34,7 +35,7 @@ const Navbar = () => {
                   <Link 
                     className={`font-bold hover:text-primary transition
                         ${activeLink === link.href ? "text-primary" : "text-white"}`} 
-                      to={link.href}
+                    to={link.href}
                   >
                     {link.label}
                   </Link>
@@ -43,8 +44,7 @@ const Navbar = () => {
             })
            }
           </ul>
-          <button 
-            className="bg-gradient-to-r from-primary to-[#FFE68FD6] border border-transparent hover:from-background hover:to-background hover:border-primary hover:text-primary transition text-[#111111] font-extrabold rounded-[6.25rem] w-[10rem] h-[3rem] ml-auto lg:ml-0">Connect Wallet</button>
+          <CustomButton className="ml-auto lg:ml-0" label= "Connect Wallet" />
           {/* TABLET AND MOBILE NAVIGATION */}
           <MobileNav activeLink={activeLink} setActiveLink={setActiveLink} />
         </div>

@@ -14,8 +14,9 @@
 
 @layer base {
   :root {
-    --background: #0f172a;
+    --background: #071624;
     --primary: #e4b40d;
+    --text-gray: #9e9e9e;
   }
 }
 
