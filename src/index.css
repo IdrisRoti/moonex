@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-fira-code {
+  font-family: "Fira Code", monospace;
+}
+
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #0f172a;
+    --primary: #e4b40d;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  @apply bg-background text-white;
+}
+
+.contain {
+  @apply max-w-[1343px] mx-auto px-3;
+}
