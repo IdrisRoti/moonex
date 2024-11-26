@@ -2,6 +2,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 
 import Navbar from "./components/Navbar"
 import Landing from "./pages/Landing"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <div>
           <Outlet />
         </div>
-        <Navbar />
+        <Footer />
       </>
     )
   }
