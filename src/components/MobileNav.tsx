@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
 import { BiMenu, BiX } from "react-icons/bi"
@@ -12,6 +12,14 @@ type TMobileNav = {
 
 const MobileNav = ({activeLink, setActiveLink}: TMobileNav) => {
     const [showNav, setShowNav] = useState(false);
+
+    useEffect(() => {
+        if(showNav){
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+        }
+    }, [showNav])
 
     const handleRouting = (href: string) => {
         setActiveLink(href);
