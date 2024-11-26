@@ -1,3 +1,7 @@
+import { FiDollarSign, FiPhoneOff } from "react-icons/fi";
+import { GoShieldCheck } from "react-icons/go";
+import { TbExchange } from "react-icons/tb";
+
 export const NavLinks = [
     {
         id: 1,
@@ -56,5 +60,32 @@ export const comparisons = [
         label: "Point no two this",
         moonex: true,
         uniswap: false
+    },
+]
+
+export const features = [
+    {
+        id: 1,
+        icon: FiDollarSign,
+        title: "Cheapest TXs",
+        content: "Exchange popular digital currencies at the cheapest possible transaction price"
+    },
+    {
+        id: 2,
+        icon: GoShieldCheck,
+        title: "CerTIK",
+        content: "We are Audited by Certik. CertiK is the leading security-focused ranking platform to"
+    },
+    {
+        id: 3,
+        icon: FiPhoneOff,
+        title: "No Contract Sells",
+        content: "No contract sells to fund the marketing wallets"
+    },
+    {
+        id: 4,
+        icon: TbExchange,
+        title: "CrossDex Support",
+        content: "Exchange popular digital currencies at the cheapest possible transaction price"
     },
 ]

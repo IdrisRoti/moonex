@@ -8,7 +8,7 @@ import { comparisons } from "../constants";
 
 const Comparison = () => {
   return (
-    <section className="contain mt-[10rem] md:mt-[18rem] mb-[10rem] lg:mt-[28rem]">
+    <section className="contain mt-[10rem] md:mt-[18rem] lg:mt-[28rem]">
         <h1 className="font-fira-code text-3xl md:text-5xl font-extrabold">Why <span className="text-primary">MoonEX </span>?</h1>
         <div className="boxShadow relative grid grid-cols-10 mt-10 md:mt-16 px-4 md:px-8 py-3 md:py-6 rounded-[1.25rem]">
           {/* GRADIENT */}
