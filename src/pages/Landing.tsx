@@ -6,6 +6,7 @@ const Landing = () => {
     <div className="overflow-hidden">
         <Hero />
         <Comparison />
+        {/* <div className="h-screen"></div> */}
     </div>
   )
 }

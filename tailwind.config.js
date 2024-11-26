@@ -7,6 +7,7 @@ export default {
         primary: "var(--primary)",
         background: "var(--background)",
         textGray: "var(--text-gray)",
+        borderGray: "var(--border-gray)",
       },
     },
   },

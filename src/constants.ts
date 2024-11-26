@@ -25,3 +25,36 @@ export const NavLinks = [
         href: "#contact"
     },
 ]
+
+export const comparisons = [
+    {
+        id: 1,
+        label: "Point no one",
+        moonex: true,
+        uniswap: false
+    },
+    {
+        id: 2,
+        label: "Point no two this",
+        moonex: true,
+        uniswap: false
+    },
+    {
+        id: 3,
+        label: "Point no two this",
+        moonex: true,
+        uniswap: false
+    },
+    {
+        id: 4,
+        label: "Point no two this",
+        moonex: true,
+        uniswap: false
+    },
+    {
+        id: 5,
+        label: "Point no two this",
+        moonex: true,
+        uniswap: false
+    },
+]
