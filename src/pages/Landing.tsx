@@ -10,7 +10,6 @@ const Landing = () => {
         <Comparison />
         <Features />
         <FAQs />
-        <div className="h-screen"></div>
     </div>
   )
 }

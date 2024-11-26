@@ -89,3 +89,21 @@ export const features = [
         content: "Exchange popular digital currencies at the cheapest possible transaction price"
     },
 ]
+
+export const accordions = [
+    {
+        id: 1,
+        question: "How do I get a Referral Code?",
+        answer: "You receive your rewards in ETH instantly once someone you refer makes a transaction!"
+    },
+    {
+        id: 2,
+        question: "Do I get rewarded in tokens or ETH when I refer buyers?",
+        answer: "You receive your rewards in ETH instantly once someone you refer makes a transaction!"
+    },
+    {
+        id: 3,
+        question: "How do I get a Referral Code?",
+        answer: "You receive your rewards in ETH instantly once someone you refer makes a transaction!"
+    },
+]

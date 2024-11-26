@@ -12,6 +12,7 @@ function App() {
         <div>
           <Outlet />
         </div>
+        <Navbar />
       </>
     )
   }
