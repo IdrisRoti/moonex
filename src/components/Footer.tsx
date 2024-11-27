@@ -10,7 +10,7 @@ import social3 from "../assets/social3.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#051422]">
+    <footer id="contact" className="bg-[#051422]">
         <div className="contain py-14 md:py-20 flex flex-col md:flex-row items-center justify-between max-md:gap-10">
             {/* LOGO */}
           <Link className="" to="/">

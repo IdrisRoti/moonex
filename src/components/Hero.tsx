@@ -43,14 +43,30 @@ const Hero = () => {
         {/* CONTENT */}
         <div className="relative flex flex-col lg:flex-row items-start justify-between lg:gap-10 md:text-center lg:text-left">
               <div className="">
-                <h1 className="text-5xl md:text-7xl font-extrabold font-fira-code lg:w-[80%]">Trusted Multi-Chain <span className="text-primary">DEX</span> Platform</h1>
-                <p className="text-textGray text-xl md:text-2xl mt-2">Trade, earn, and own crypto on the all-in-one multi-chain DEX</p>
-                <div className="flex items-center md:justify-center lg:justify-start gap-4 mt-6">
+                <motion.h1 
+                  initial={{ y: -20, opacity: 0}}
+                  animate={{ y: 0, opacity: 1}}
+                  transition={{ duration: 1, ease: "easeIn"}}
+                  className="text-5xl md:text-7xl font-extrabold font-fira-code lg:w-[80%]">Trusted Multi-Chain <span className="text-primary">DEX</span> Platform</motion.h1>
+                <motion.p 
+                  initial={{ y: 20, opacity: 0}}
+                  animate={{ y: 0, opacity: 1}}
+                  transition={{ duration: 1, delay: .5, ease: "easeIn"}}
+                  className="text-textGray text-xl md:text-2xl mt-2">Trade, earn, and own crypto on the all-in-one multi-chain DEX</motion.p>
+                <motion.div 
+                  initial={{ x: -20, opacity: 0}}
+                  animate={{ x: 0, opacity: 1}}
+                  transition={{ duration: 1, delay: .5, ease: "easeIn"}}
+                  className="flex items-center md:justify-center lg:justify-start gap-4 mt-6">
                   <CustomButton label= "Connect Wallet" />
                   <CustomButton variant="outlined" label= "Trade Crypto" />
-                </div>
+                </motion.div>
               </div>
-              <div className="hidden lg:block w-[16.25rem] aspect-square rounded-full -mt-20 bg-[radial-gradient(100%_100%_at_top_left,#FFF6D7,#E4B40D)]" />
+              <motion.div 
+                initial={{ x: 20, opacity: 0}}
+                animate={{ x: 0, opacity: 1}}
+                transition={{ duration: 1, delay: 1, ease: "easeIn"}}
+                className="hidden lg:block w-[16.25rem] aspect-square rounded-full -mt-20 bg-[radial-gradient(100%_100%_at_top_left,#FFF6D7,#E4B40D)]" />
         </div>
     </section>
   )

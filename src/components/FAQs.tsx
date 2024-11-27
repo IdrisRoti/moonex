@@ -7,7 +7,7 @@ const FAQs = () => {
     const [index, setIndex] = useState<number | null>(null);
 
   return (
-    <section className="my-20 md:my-24 pb-12 md:pb-16 relative px-2">
+    <section id="faq" className="my-20 md:my-24 pb-12 md:pb-16 relative px-2">
         {/* GRADIENTS */}
         <div className="absolute -bottom-[10%] lg:-bottom-1/4 left-0 bg-[#EDD955] w-[150px] md:w-[200px] aspect-square rounded-[50%] blur-[250px] -z-10" />
         <div className="absolute top-0 -right-1/2 lg:right-0 bg-[#EDD955] w-[150px] md:w-[200px] aspect-square rounded-[50%] blur-[250px] -z-10" />

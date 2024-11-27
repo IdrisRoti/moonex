@@ -25,8 +25,8 @@ const Navbar = () => {
     }, [])
 
   return (
-    <nav className={`w-full fixed top-0 pt-6 md:pt-12 z-[999] ${scrollPosition.y > 0 && "px-2 lg:px-0"}`}>
-        <div className={`contain flex items-center justify-between gap-3 ${scrollPosition.y > 0 && "bg-white/10 backdrop-blur-xl border border-white/20 rounded-[1.25rem] px-4 py-3"}`}>
+    <nav className={`w-full fixed top-0 pt-6 md:pt-12 z-[999] ${scrollPosition.y > 0 && "lg:px-2 lg:bg-white/10 max-lg:backdrop-blur-xl max-lg:border-b border-white/20 max-lg:pb-4"}`}>
+        <div className={`contain flex items-center justify-between gap-3 ${scrollPosition.y > 0 && "lg:bg-white/10 lg:backdrop-blur-xl lg:border border-white/20 lg:rounded-[1.25rem] lg:px-4 lg:py-3"}`}>
           {/* LOGO */}
           <Link className="hidden md:block" to="/">
             <img src={LogoWithName} alt="Moonex Logo" className="w-[12rem] h-[4.5rem] object-cover" />

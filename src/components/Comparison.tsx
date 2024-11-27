@@ -5,12 +5,18 @@ import Check from "../assets/check_bold.png";
 import X from "../assets/close_small.png";
 
 import { comparisons } from "../constants";
+import { motion } from "framer-motion";
 
 const Comparison = () => {
   return (
-    <section className="contain mt-[10rem] md:mt-[18rem] lg:mt-[28rem]">
+    <section id="about" className="contain mt-[10rem] md:mt-[18rem] lg:mt-[28rem]">
         <h1 className="font-fira-code text-3xl md:text-5xl font-extrabold">Why <span className="text-primary">MoonEX </span>?</h1>
-        <div className="boxShadow relative grid grid-cols-10 mt-10 md:mt-16 px-4 md:px-8 py-3 md:py-6 rounded-[1.25rem]">
+        <motion.div
+          initial={{y: 20, opacity: 0}} 
+          whileInView={{y: 0, opacity: 1}} 
+          viewport={{margin: "-50px", once: true}}
+          transition={{duration: .5, ease: "easeIn" }}
+          className="boxShadow relative grid grid-cols-10 mt-10 md:mt-16 px-4 md:px-8 py-3 md:py-6 rounded-[1.25rem]">
           {/* GRADIENT */}
           <div className="absolute bottom-0 left-1/2 md:left-1/4 bg-[#EDD955] w-[200px] md:w-[300px] h-[150px] md:h-[200px] rounded-[50%] blur-[240px] -z-10" />
           {/* CONTENT */}
@@ -58,7 +64,7 @@ const Comparison = () => {
               })
             }
           </div>
-        </div>
+        </motion.div>
     </section>
   )
 }
